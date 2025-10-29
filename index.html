@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Dany Antonio Zelaya Vargas</title>
+    <title data-es="Portafolio de Dany Antonio Zelaya Vargas" data-en="Portfolio of Dany Antonio Zelaya Vargas">Portafolio de Dany Antonio Zelaya Vargas</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,15 +13,23 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <h2><span class="logo-icon">💼</span>Portafolio</h2>
+                <h2><span class="logo-icon">💼</span><span class="logo-text" data-es="Portafolio" data-en="Portfolio">Portafolio</span></h2>
             </div>
             <ul class="nav-menu">
-                <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
-                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#inicio" class="nav-link" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link" data-es="Sobre Mí" data-en="About">Sobre Mí</a></li>
+                <li><a href="#habilidades" class="nav-link" data-es="Habilidades" data-en="Skills">Habilidades</a></li>
+                <li><a href="#proyectos" class="nav-link" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link" data-es="Contacto" data-en="Contact">Contacto</a></li>
             </ul>
+            
+            <!-- Botón de traducción integrado en la navegación -->
+            <div class="language-switcher">
+                <button id="translateBtn" class="btn-translate">
+                    <i class="fas fa-language"></i>
+                    <span>EN</span>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -31,43 +39,45 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        <span class="hello">Hola, soy</span>
+                        <span class="hello" data-es="Hola, soy" data-en="Hello, I'm">Hola, soy</span>
                         <span class="name">Dany <span class="highlight">Zelaya</span></span>
                     </h1>
-                    <p class="hero-subtitle">Desarrollador Full Stack & Diseñador UI/UX</p>
-                    <p class="hero-description">
+                    <p class="hero-subtitle" data-es="Desarrollador Full Stack & Diseñador UI/UX" data-en="Full Stack Developer & UI/UX Designer">Desarrollador Full Stack & Diseñador UI/UX</p>
+                    <p class="hero-description" data-es="Creo experiencias digitales extraordinarias que combinan diseño elegante con funcionalidad excepcional. Transformo ideas en realidad a través del código." data-en="I create extraordinary digital experiences that combine elegant design with exceptional functionality. I transform ideas into reality through code.">
                         Creo experiencias digitales extraordinarias que combinan diseño elegante 
                         con funcionalidad excepcional. Transformo ideas en realidad a través del código.
                     </p>
                     
                     <div class="hero-buttons">
                         <a href="#proyectos" class="btn btn-primary">
-                            <i class="fas fa-rocket"></i>Ver Proyectos
+                            <i class="fas fa-rocket"></i>
+                            <span data-es="Ver Proyectos" data-en="View Projects">Ver Proyectos</span>
                         </a>
                         <a href="#contacto" class="btn btn-secondary">
-                            <i class="fas fa-paper-plane"></i>Contactar
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-es="Contactar" data-en="Contact Me">Contactar</span>
                         </a>
                     </div>
 
                     <div class="hero-stats">
                         <div class="stat">
                             <span class="stat-number">5+</span>
-                            <span class="stat-label">Proyectos</span>
+                            <span class="stat-label" data-es="Proyectos" data-en="Projects">Proyectos</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">1+</span>
-                            <span class="stat-label">Años Exp</span>
+                            <span class="stat-label" data-es="Años Exp" data-en="Years Exp">Años Exp</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">5+</span>
-                            <span class="stat-label">Clientes</span>
+                            <span class="stat-label" data-es="Clientes" data-en="Clients">Clientes</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="hero-image">
                     <div class="image-container">
-                        <img src="C:\Users\danil\Desktop\Portafolio_Personal\img\foto1.1.png" alt="Foto de Dany Zelaya" class="profile-img">
+                        <img src="C:\Users\danil\Desktop\Portafolio_Personal\foto1.png" alt="Foto de Dany Zelaya" class="profile-img">
                         <div class="floating-icons">
                             <div class="icon html"><i class="fab fa-html5"></i></div>
                             <div class="icon css"><i class="fab fa-css3-alt"></i></div>
@@ -84,53 +94,56 @@
     <section id="sobre-mi" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Sobre <span class="highlight">Mí</span></h2>
-                <p class="section-subtitle">Conoce más sobre mi journey</p>
+                <h2 class="section-title">
+                    <span data-es="Sobre" data-en="About">Sobre</span> 
+                    <span class="highlight" data-es="Mí" data-en="Me">Mí</span>
+                </h2>
+                <p class="section-subtitle" data-es="Conoce más sobre mi journey" data-en="Learn more about my journey">Conoce más sobre mi journey</p>
             </div>
 
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-wrapper">
-                        <img src="C:\Users\danil\Desktop\Portafolio_Personal\img\Foto2.1.png" alt="Dany Zelaya">
+                        <img src="C:\Users\danil\Desktop\Portafolio_Personal\foto1.1.png" alt="Dany Zelaya">
                         <div class="experience-badge">
                             <span class="years">2+</span>
-                            <span>Años de Experiencia</span>
+                            <span data-es="Años de Experiencia" data-en="Years of Experience">Años de Experiencia</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="about-text">
-                    <h3>Creando magia digital desde 2024</h3>
-                    <p>
-                        Soy un desarrollador full-stack apasionado por crear soluciones innovadoras 
-                        que impacten positivamente en la vida de las personas. Mi enfoque combina 
-                        creatividad, tecnología y atención al detalle.
+                    <h3 data-es="Creando magia digital desde 2024" data-en="Creating digital magic since 2024">Creando magia digital desde 2024</h3>
+                    <p data-es="Soy un desarrollador full-stack apasionado por crear soluciones innovadoras que impacten positivamente en la vida de las personas. Mi enfoque combina creatividad, tecnología y atención al detalle." data-en="I am a passionate full-stack developer dedicated to creating innovative solutions that positively impact people's lives. My approach combines creativity, technology, and attention to detail.">
+                        Soy un desarrollador full-stack apasionado por crear soluciones innovadoras que impacten positivamente en la vida de las personas. Mi enfoque combina creatividad, tecnología y atención al detalle, buscando siempre optimizar cada proceso y ofrecer experiencias digitales eficientes y funcionales.
+Poseo una sólida comprensión del desarrollo tanto del lado del frontend como del backend, lo que me permite diseñar e implementar aplicaciones completas, escalables y seguras. Me mantengo en constante aprendizaje, explorando nuevas herramientas y metodologías que impulsen la calidad y el rendimiento de mis proyectos.
+Mi objetivo profesional es seguir creciendo en el ámbito tecnológico, aportando mis habilidades a equipos multidisciplinarios y contribuyendo al desarrollo de soluciones que generen un verdadero valor para los usuarios y las organizaciones
+
                     </p>
 
                     <div class="about-details">
                         <div class="detail">
-                            <strong>Nombre:</strong>
+                            <strong data-es="Nombre:" data-en="Name:">Nombre:</strong>
                             <span>Dany Antonio Zelaya Vargas</span>
                         </div>
                         <div class="detail">
-                            <strong>Email:</strong>
+                            <strong data-es="Email:" data-en="Email:">Email:</strong>
                             <span>danilezelayavargas@gmail.com</span>
                         </div>
                         <div class="detail">
-                            <strong>Edad:</strong>
-                            <span>19 años</span>
-                        </div>
-                        <div class="detail">
-                            <strong>Ubicación:</strong>
+                            <strong data-es="Ubicación:" data-en="Location:">Ubicación:</strong>
                             <span>Usulután, El Salvador</span>
                         </div>
                     </div>
 
                     <div class="cv-download">
-                            <a href="C:\Users\danil\Desktop\Portafolio_Personal\cv\cv.2.pdf" class="btn btn-primary" download>Descargar CV</a>
+                        <a href="C:\Users\danil\Desktop\Portafolio_Personal\cv\cv.2.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i>
+                            <span data-es="Descargar CV" data-en="Download CV">Descargar CV</span>
                         </a>
                         <a href="#contacto" class="btn btn-outline">
-                            <i class="fas fa-briefcase"></i>Contratar
+                            <i class="fas fa-briefcase"></i>
+                            <span data-es="Contratar" data-en="Hire Me">Contratar</span>
                         </a>
                     </div>
                 </div>
@@ -142,13 +155,16 @@
     <section id="habilidades" class="skills-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Mis <span class="highlight">Habilidades</span></h2>
-                <p class="section-subtitle">Tecnologías que domino</p>
+                <h2 class="section-title">
+                    <span data-es="Mis" data-en="My">Mis</span> 
+                    <span class="highlight" data-es="Habilidades" data-en="Skills">Habilidades</span>
+                </h2>
+                <p class="section-subtitle" data-es="Tecnologías que domino" data-en="Technologies I master">Tecnologías que domino</p>
             </div>
 
             <div class="skills-container">
                 <div class="skills-category">
-                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <h3><i class="fas fa-code"></i> <span data-es="Frontend" data-en="Frontend">Frontend</span></h3>
                     <div class="skills-grid">
                         <div class="skill-item">
                             <div class="skill-info">
@@ -190,7 +206,7 @@
                 </div>
 
                 <div class="skills-category">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <h3><i class="fas fa-server"></i> <span data-es="Backend" data-en="Backend">Backend</span></h3>
                     <div class="skills-grid">
                         <div class="skill-item">
                             <div class="skill-info">
@@ -233,7 +249,7 @@
             </div>
 
             <div class="tools-section">
-                <h3>Herramientas & Tecnologías</h3>
+                <h3 data-es="Herramientas & Tecnologías" data-en="Tools & Technologies">Herramientas & Tecnologías</h3>
                 <div class="tools-grid">
                     <div class="tool-item">
                         <i class="fab fa-git-alt"></i>
@@ -264,22 +280,25 @@
 <section id="proyectos" class="projects">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Mis <span class="highlight">Proyectos</span></h2>
-            <p class="section-subtitle">Trabajos recientes y destacados</p>
+            <h2 class="section-title">
+                <span data-es="Mis" data-en="My">Mis</span> 
+                <span class="highlight" data-es="Proyectos" data-en="Projects">Proyectos</span>
+            </h2>
+            <p class="section-subtitle" data-es="Trabajos recientes y destacados" data-en="Recent and featured works">Trabajos recientes y destacados</p>
         </div>
 
         <div class="projects-filter">
-            <button class="filter-btn active">Todos</button>
-            <button class="filter-btn">Web</button>
-            <button class="filter-btn">Mobile</button>
-            <button class="filter-btn">Design</button>
+            <button class="filter-btn active" data-es="Todos" data-en="All">Todos</button>
+            <button class="filter-btn" data-es="Web" data-en="Web">Web</button>
+            <button class="filter-btn" data-es="Mobile" data-en="Mobile">Mobile</button>
+            <button class="filter-btn" data-es="Design" data-en="Design">Design</button>
         </div>
 
         <div class="projects-grid">
             <!-- Proyecto 1 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="C:\Users\danil\Desktop\Portafolio_Personal\img\proyecto1.jpg" alt="Adopta a un amigo">
+                    <img src="C:\Users\danil\Desktop\Portafolio_Personal\proyecto1.jpg" alt="Adopt a Friend">
                     <div class="project-overlay">
                         <div class="project-links">
                             <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
@@ -288,9 +307,9 @@
                     </div>
                 </div>
                 <div class="project-info">
-                    <span class="project-category">Página web</span>
-                    <h3>Adopta a un amigo</h3>
-                    <p>Plataforma web para un refugio de animales, con enfoque en promover la adopción responsable de mascotas.</p>
+                    <span class="project-category" data-es="Página web" data-en="Web Page">Página web</span>
+                    <h3 data-es="Adopta a un amigo" data-en="Adopt a Friend">Adopta a un amigo</h3>
+                    <p data-es="Plataforma web para un refugio de animales, con enfoque en promover la adopción responsable de mascotas." data-en="Web platform for an animal shelter, focused on promoting responsible pet adoption.">Plataforma web para un refugio de animales, con enfoque en promover la adopción responsable de mascotas.</p>
                     <div class="project-tech">
                         <span>React</span>
                         <span>Node.js</span>
@@ -302,7 +321,7 @@
             <!-- Proyecto 2 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="C:\Users\danil\Desktop\Portafolio_Personal\img\proyecto2.jpg" alt="Task Planner">
+                    <img src="C:\Users\danil\Desktop\Portafolio_Personal\proyecto2.jpg" alt="Task Planner">
                     <div class="project-overlay">
                         <div class="project-links">
                             <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
@@ -311,9 +330,9 @@
                     </div>
                 </div>
                 <div class="project-info">
-                    <span class="project-category">Mobile App</span>
-                    <h3>Task Planner</h3>
-                    <p>Aplicación móvil para organizar tareas, con almacenamiento local y filtros para una mejor gestión de tiempo.</p>
+                    <span class="project-category" data-es="Mobile App" data-en="Mobile App">Mobile App</span>
+                    <h3 data-es="Planificador de Tareas" data-en="Task Planner">Planificador de Tareas</h3>
+                    <p data-es="Aplicación móvil para organizar tareas, con almacenamiento local y filtros para una mejor gestión de tiempo." data-en="Mobile application for organizing tasks, with local storage and filters for better time management.">Aplicación móvil para organizar tareas, con almacenamiento local y filtros para una mejor gestión de tiempo.</p>
                     <div class="project-tech">
                         <span>React Native</span>
                         <span>Firebase</span>
@@ -325,7 +344,7 @@
             <!-- Proyecto 3 -->
             <div class="project-card">
                 <div class="project-image">
-                    <img src="C:\Users\danil\Desktop\Portafolio_Personal\img\proyecto3.jpg" alt="Artesanías Conchita">
+                    <img src="C:\Users\danil\Desktop\Portafolio_Personal\proyecto3.jpg" alt="Conchita Crafts">
                     <div class="project-overlay">
                         <div class="project-links">
                             <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
@@ -334,9 +353,9 @@
                     </div>
                 </div>
                 <div class="project-info">
-                    <span class="project-category">Software</span>
-                    <h3>Artesanías Conchita</h3>
-                    <p>Prototipo de software empresarial que permite llevar el control completo de facturación e inventario de la empresa.</p>
+                    <span class="project-category" data-es="Software" data-en="Software">Software</span>
+                    <h3 data-es="Artesanías Conchita" data-en="Conchita Crafts">Artesanías Conchita</h3>
+                    <p data-es="Prototipo de software empresarial que permite llevar el control completo de facturación e inventario de la empresa." data-en="Business software prototype that allows complete control of company billing and inventory.">Prototipo de software empresarial que permite llevar el control completo de facturación e inventario de la empresa.</p>
                     <div class="project-tech">
                         <span>VS</span>
                         <span>Adobe XD</span>
@@ -348,7 +367,8 @@
 
         <div class="projects-cta">
             <a href="#contacto" class="btn btn-large">
-                <i class="fas fa-briefcase"></i>¿Tienes un proyecto en mente?
+                <i class="fas fa-briefcase"></i>
+                <span data-es="¿Tienes un proyecto en mente?" data-en="Do you have a project in mind?">¿Tienes un proyecto en mente?</span>
             </a>
         </div>
     </div>
@@ -358,23 +378,19 @@
     <section id="contacto" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Contacto</h2>
-                <p class="section-subtitle">¡Hablemos sobre tu próximo proyecto!</p>
+                <h2 class="section-title" data-es="Contacto" data-en="Contact">Contacto</h2>
+                <p class="section-subtitle" data-es="¡Hablemos sobre tu próximo proyecto!" data-en="Let's talk about your next project!">¡Hablemos sobre tu próximo proyecto!</p>
             </div>
 
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>¡Hablemos!</h3>
-                    <p>Estoy disponible para nuevos proyectos y oportunidades. No dudes en contactarme.</p>
+                    <h3 data-es="¡Hablemos!" data-en="Let's Talk!">¡Hablemos!</h3>
+                    <p data-es="Estoy disponible para nuevos proyectos y oportunidades. No dudes en contactarme." data-en="I'm available for new projects and opportunities. Don't hesitate to contact me.">Estoy disponible para nuevos proyectos y oportunidades. No dudes en contactarme.</p>
                     
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <span>danilezelayavargas@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+503 6852 1146 
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
@@ -390,19 +406,20 @@
 
                 <form class="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="text" placeholder="Nombre completo" required data-es-placeholder="Nombre completo" data-en-placeholder="Full Name">
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Correo electrónico" required>
+                        <input type="email" placeholder="Correo electrónico" required data-es-placeholder="Correo electrónico" data-en-placeholder="Email Address">
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Asunto">
+                        <input type="text" placeholder="Asunto" data-es-placeholder="Asunto" data-en-placeholder="Subject">
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                        <textarea placeholder="Tu mensaje" rows="5" required data-es-placeholder="Tu mensaje" data-en-placeholder="Your Message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>Enviar Mensaje
+                        <i class="fas fa-paper-plane"></i>
+                        <span data-es="Enviar Mensaje" data-en="Send Message">Enviar Mensaje</span>
                     </button>
                 </form>
             </div>
@@ -414,28 +431,85 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Portafolio</h3>
-                    <p>Creando experiencias digitales excepcionales desde 2022</p>
+                    <h3 data-es="Portafolio" data-en="Portfolio">Portafolio</h3>
+                    <p data-es="Creando experiencias digitales excepcionales desde 2022" data-en="Creating exceptional digital experiences since 2022">Creando experiencias digitales excepcionales desde 2022</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
+                    <h4 data-es="Enlaces Rápidos" data-en="Quick Links">Enlaces Rápidos</h4>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#sobre-mi">Sobre Mí</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
+                        <li><a href="#sobre-mi" data-es="Sobre Mí" data-en="About">Sobre Mí</a></li>
+                        <li><a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                        <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contacto</h4>
+                    <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
                     <p>danilezelayavargas@gmail.com</p>
-                    <p>+503 6852 1146</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Dany Antonio Zelaya Vargas. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Dany Antonio Zelaya Vargas. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Sistema de traducción mejorado
+        document.addEventListener('DOMContentLoaded', function() {
+            const translateBtn = document.getElementById('translateBtn');
+            const translateBtnText = translateBtn.querySelector('span');
+            let currentLang = 'es';
+            
+            // Textos para el botón de traducción
+            const buttonTexts = {
+                'es': 'EN',
+                'en': 'ES'
+            };
+            
+            // Función para cambiar el idioma
+            function toggleLanguage() {
+                currentLang = currentLang === 'es' ? 'en' : 'es';
+                
+                // Actualizar todos los elementos con datos de traducción
+                document.querySelectorAll('[data-es], [data-en]').forEach(element => {
+                    if (element.hasAttribute(`data-${currentLang}`)) {
+                        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                            // Para inputs y textareas, actualizar placeholder
+                            const placeholder = element.getAttribute(`data-${currentLang}-placeholder`);
+                            if (placeholder) {
+                                element.placeholder = placeholder;
+                            }
+                        } else {
+                            // Para otros elementos, actualizar texto
+                            element.textContent = element.getAttribute(`data-${currentLang}`);
+                        }
+                    }
+                });
+                
+                // Actualizar el texto del botón
+                translateBtnText.textContent = buttonTexts[currentLang];
+                
+                // Cambiar el idioma del documento HTML
+                document.documentElement.lang = currentLang;
+                
+                // Actualizar el título de la página
+                document.title = document.querySelector('title').getAttribute(`data-${currentLang}`);
+                
+                // Guardar preferencia en localStorage
+                localStorage.setItem('preferredLanguage', currentLang);
+            }
+            
+            // Cargar idioma guardado
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang && savedLang !== 'es') {
+                currentLang = savedLang;
+                toggleLanguage(); // Cambiar al idioma guardado
+            }
+            
+            // Evento del botón de traducción
+            translateBtn.addEventListener('click', toggleLanguage);
+        });
+    </script>
 </body>
 </html>
